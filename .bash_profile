@@ -13,11 +13,10 @@ LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 # ALIAS
 alias ll="ls -la"
 alias js="repl.history"
-alias mongod="mongod --config /usr/local/etc/mongod.conf"
 
 # LOAD NODE
 source ~/.nvm/nvm.sh
-nvm use 0.12.2
+nvm use v5.2.0
 
 # FIND WHICH BRANCH IM CURRENTLY ON AND DISPLAY
 parse_git_branch() {
