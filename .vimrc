@@ -8,11 +8,19 @@ execute pathogen#infect()
 """"""""""""""""""
 syntax on
 filetype plugin indent on
-autocmd VimEnter * NERDTree
-set number
-set tabstop=2 
-set shiftwidth=2 
-set expandtab
+
+let mapleader=" "           " Set my leader key to ' '
+set number                  " Show number lines
+set tabstop=2               " Set tabs to 2 spaces 
+set shiftwidth=2            " Autoindent with 2 space 
+set expandtab               " Use spaces, not tabs
+set clipboard=unnamed       " Universal clipboard
+set undofile                " Save undo's after file closes
+set undodir=/tmp            " where to save undo histories
+set undolevels=1000         " How many undos
+set undoreload=10000        " number of lines to save for undo
+set directory=~/.backup/vim/swap
+set mouse=a
 
 """"""""""""""""""
 """" TEMPLATES 
@@ -22,8 +30,9 @@ au BufNewFile,BufRead *.swg set filetype=swig
 au BufNewFile,BufRead *.ejs set filetype=ejs
 autocmd Filetype ruby setlocal ts=2 sts=2 sw=2
 autocmd Filetype haml setlocal ts=2 sts=2 sw=2
-autocmd Filetype html setlocal ts=2 sts=2 sw=2
 autocmd Filetype erb setlocal ts=2 sts=2 sw=2
 autocmd Filetype javascript setlocal ts=2 sts=2 sw=2
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+autocmd Filetype scss setlocal ts=2 sts=2 sw=2
+autocmd Filetype html setlocal ts=4 sts=4 sw=4
 
