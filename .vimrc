@@ -1,4 +1,3 @@
-""""""""""""""""""
 """" PATHOGEN 
 """"""""""""""""""
 execute pathogen#infect()
@@ -15,10 +14,6 @@ set tabstop=2               " Set tabs to 2 spaces
 set shiftwidth=2            " Autoindent with 2 space 
 set expandtab               " Use spaces, not tabs
 set clipboard=unnamed       " Universal clipboard
-set undofile                " Save undo's after file closes
-set undodir=/tmp            " where to save undo histories
-set undolevels=1000         " How many undos
-set undoreload=10000        " number of lines to save for undo
 set directory=~/.backup/vim/swap
 set mouse=a
 
@@ -36,3 +31,5 @@ autocmd Filetype python setlocal ts=4 sts=4 sw=4
 autocmd Filetype scss setlocal ts=2 sts=2 sw=2
 autocmd Filetype html setlocal ts=4 sts=4 sw=4
 
+hi Search cterm=NONE ctermfg=grey ctermbg=LightGray
+nnoremap <silent> <C-l> :nohlsearch<CR><C-l>
