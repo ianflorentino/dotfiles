@@ -13,6 +13,11 @@ LS_COLORS=$LS_COLORS:'di=0;36:' ; export LS_COLORS
 # ALIAS
 alias ll="ls -la"
 alias vi='nvim'
+alias st='git status'
+alias cm='git commit -m'
+alias lg='git log'
+alias diff='git diff'
+alias ys='yarn && yarn start'
 
 # LOAD NVM & NODE
 export NODE_PATH="$HOME/local/node/bin:/usr/local/bin:$PATH"

@@ -9,6 +9,7 @@ brew "node"
 brew "nvm"
 brew "go"
 brew "the_silver_searcher"
+brew "ctags"
 
 tap "neovim/neovim"
 brew "neovim", args: ["HEAD"]
